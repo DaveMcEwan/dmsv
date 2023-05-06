@@ -32,6 +32,10 @@ Notes
 - Recipies in all Makefiles should be POSIX-compliant, even though the
   Makefiles themselves may depend on non-POSIX features of GNU Make.
 - Tested using curl 7.81.0 on Linux Mint 21.1 (2023).
+  - gcc 11.3.0 (present in base system)
+  - `sudo apt install g++`
+  - `sudo apt install libreadline-dev`
+  - `sudo apt install zlib1g-dev`
 - Everything in `tools/build/in` is downloaded from elsewhere, unmodified.
   Results of any processing or modifications go to `tools/build/out`.
 - Installed binary goes to `tools/local/<tool>-<version>` and the corresponding

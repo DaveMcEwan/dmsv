@@ -9,8 +9,8 @@ VERSION := 3.4.4
 # It is included in this repo because it's a build and runtime dependency of
 # Yosys (when built with `ENABLE_PLUGINS=1`, the default).
 # The installation consists of C headers, a pkg-config file, an archive for
-# static linking `lib64/libffi.a`, and shared objects for dynamic linking
-# `lib64/libffi.so*`.
+# static linking `lib/libffi.a`, and shared objects for dynamic linking
+# `lib/libffi.so*`.
 
 include ${THIS}/tools/mk/common.mk
 
@@ -40,8 +40,8 @@ define MODULE
 #%Module
 module-whatis "Foreign Function Interface library."
 prepend-path CPATH "${PREFIX}/include"
-prepend-path LIBRARY_PATH "${PREFIX}/lib64"
-prepend-path LD_LIBRARY_PATH "${PREFIX}/lib64"
+prepend-path LIBRARY_PATH "${PREFIX}/lib"
+prepend-path LD_LIBRARY_PATH "${PREFIX}/lib"
 endef
 
 ${INSTALL}: ${BUILD} | ${LOCAL} ${MODULEFILES}
