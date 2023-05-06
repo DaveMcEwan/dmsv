@@ -22,7 +22,7 @@ ${MODULEFILES}:
 	mkdir -p ${MODULEFILES}
 MODULEFILE := ${MODULEFILES}/${TOOL}-${VERSION}
 
-RM_REDIRECT = rm -f $@.stdout $@.stderr
+RM_REDIRECT = @rm -f $@.stdout $@.stderr
 REDIRECT = >> $@.stdout 2>> $@.stderr
 
 FETCH := ${OUT}/fetch_${TOOL}-${VERSION}
