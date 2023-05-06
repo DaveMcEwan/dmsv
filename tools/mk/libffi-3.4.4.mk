@@ -49,6 +49,7 @@ ${INSTALL}:
 	${RM_REDIRECT}
 	cd ${SRCDIR} && make install \
 		${REDIRECT}
+	chmod a-w -R ${PREFIX}/*
 	${WRITE_MODULE}
 	date > $@
 

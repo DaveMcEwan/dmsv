@@ -32,6 +32,7 @@ endef
 ${INSTALL}: ${FETCH} | ${LOCAL} ${MODULEFILES}
 ${INSTALL}:
 	cp -r ${SRCDIR} ${PREFIX}
+	chmod a-w -R ${PREFIX}/*
 	${WRITE_MODULE}
 	date > $@
 

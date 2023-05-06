@@ -43,6 +43,7 @@ ${INSTALL}:
 		cp {} ${PREFIX}/bin \;
 	cp ${SRCDIR}/${TOOL} ${PREFIX}/bin/
 	cp ${SRCDIR}/${TOOL}_MANUAL_v${VERSION}.pdf ${PREFIX}/doc
+	chmod a-w -R ${PREFIX}/*
 	${WRITE_MODULE}
 	date > $@
 
