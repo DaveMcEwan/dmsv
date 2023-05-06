@@ -17,7 +17,7 @@ include ${THIS}/tools/mk/common.mk
 TAR := ${TOOL}-${VERSION}.tar.gz
 SRCDIR := ${OUT}/${TOOL}-${VERSION}
 
-SOURCE := https://github.com/${TOOL}/${TOOL}/releases/download/v${VERSION}/
+SOURCE := https://github.com/${TOOL}/${TOOL}/releases/download/v${VERSION}
 ${FETCH}:
 	${RM_REDIRECT}
 	curl -v -L --output ${IN}/${TAR} ${SOURCE}/${TAR} \

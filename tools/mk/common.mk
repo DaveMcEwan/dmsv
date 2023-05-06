@@ -48,7 +48,7 @@ define newline
 
 
 endef
-# NOTE: 2 empty lines above this comment, before `define newline`.
+# NOTE: 2 empty lines above this comment, after `define newline`.
 
 WRITE_MODULE = echo "$(subst ",\",$(subst ${newline},\n,${MODULE}))" > ${MODULEFILE}
 
