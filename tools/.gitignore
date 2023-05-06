@@ -1,0 +1,11 @@
+
+# Working area used when building tools.
+build/
+
+# Installation area for built tools.
+local/
+
+# Modulfiles for setting up tools and environment.
+# These are created as part of the Makefile-defined installation process.
+modulefiles/
+
