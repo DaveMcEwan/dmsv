@@ -1,6 +1,6 @@
 
-Usage
------
+Installing Tools
+----------------
 
 Before using any Makefiles in this directory, set and export `$THIS` to the
 root of this repository:
@@ -26,9 +26,22 @@ For anything else, read the Makefiles.
 Each tool's Makefile should contain notes about the tool's purpose.
 
 
+Environment Modules
+-------------------
+
+Once the tools are installed, make them accessible by adding something like
+this to your shell configuration, e.g. `~/.bashrc`:
+
+```sh
+module use --append $THIS/tools/modulefiles
+module load dmsv
+```
+
+
 Notes
 -----
 
+- Prefer pre-built tools where available, otherwise build from source.
 - Recipies in all Makefiles should be POSIX-compliant, even though the
   Makefiles themselves may depend on non-POSIX features of GNU Make.
 - Tested using curl 7.81.0 on Linux Mint 21.1 (2023).

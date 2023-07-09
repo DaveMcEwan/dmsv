@@ -1,0 +1,10 @@
+#%Module
+module-whatis "Meta-module for all non-system FOSS tools used in dmsv."
+module load help2man-1.49.3
+module load libffi-3.4.4
+module load tcl-8.6.13
+module load graphviz-8.0.5
+module load pandoc-3.1.2
+module load svlint-0.7.2
+module load verilator-5.012
+module load yosys-0.28
