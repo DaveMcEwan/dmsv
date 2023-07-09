@@ -36,6 +36,9 @@ Notes
   - `sudo apt install g++`
   - `sudo apt install libreadline-dev`
   - `sudo apt install zlib1g-dev`
+  - `sudo apt install autoconf`
+  - `sudo apt install libfl-dev`
+  - `sudo apt install perl-doc`
 - Everything in `tools/build/in` is downloaded from elsewhere, unmodified.
   Results of any processing or modifications go to `tools/build/out`.
 - Installed binary goes to `tools/local/<tool>-<version>` and the corresponding
